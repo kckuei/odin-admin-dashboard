@@ -28,9 +28,25 @@ body {
     grid-area: 2 / 2 / 4 / 4;
 }
 
+#dashboard {
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
 #dashboard .title {
     font-size: 2em;
-    font-weight: bold;
+    padding: 10px;
+}
+
+#dashboard .text {
+    font-size: 1.3em;
+    padding: 10px;
+}
+
+#title,
+#communities {
+    margin-bottom: 50px;
 }
 
 
