@@ -27,6 +27,9 @@
             * Greeting
             * User corner
             * Button area
+
+    * The project cards should grow/shrink appropriately. Maybe set a minimum and maximum size. 
+    * Need to address issue, where body max height becomes shorter than the card stack height (height: 100%)
     -->
 
     <div id="dashboard">
@@ -93,7 +96,7 @@
     <div id="main">
         <div id="projects">
             <div class="title">Your Projects</div>
-            <div>
+            <div id="proj-card-container">
                 <div class="proj-card">
                     <div>TOP Project 1</div>
                     <div>Project description.</div>
@@ -152,7 +155,7 @@
         </div>
         <div id="annoucements">
             <div class="title">Announcements</div>
-            <div>
+            <div id="announce-container">
                 <div class="announce-card">
                     <div>Site Maintenence</div>
                     <div>Text description.</div>
@@ -169,7 +172,7 @@
         </div>
         <div id="trending">
             <div class="title">Trending</div>
-            <div>
+            <div id="trend-container">
                 <div class="trend-card">
                     <div></div>
                     <div>
