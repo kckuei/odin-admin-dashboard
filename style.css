@@ -19,8 +19,8 @@ body {
 
 #header {
     background-color: white;
-    grid-column: 2 / 4;
     grid-row: 1 / 2;
+    grid-column: 2 / 4;
 }
 
 #main {
@@ -141,45 +141,64 @@ body {
 
 #header {
     display: grid;
-    grid-template: 1fr 1fr / 2fr 1fr;
+    grid-template: 1fr 2fr / 2fr 1fr;
+}
+
+#search {
+    display: flex;
 }
 
 #search-bar {
-    height: 1.5em;
+    height: 25px;
     width: 80%;
     background-color: #E2E8F0;
     border: none;
-    border-radius: 7px;
+    border-radius: 15px;
     margin: 10px;
+    padding-left: 12px;
+    padding-right: 12px;
 }
 
 #greeting {
     margin: 10px;
+    display: flex;
 }
 
-#greeting :nth-child(2) {
-    font-size: 1em;
+#greeting-text :first-child {
+    font-size: 0.8em;
     font-weight: bold;
 }
 
-#greeting :nth-child(3) {
+#greeting-text :nth-child(2) {
     font-size: 1.5em;
     font-weight: bold;
 }
 
-#buttondash {}
+#buttondash {
+    display: flex;
+    gap: 10px;
+    /* flex-wrap: wrap; */
+}
 
-button {
+#buttondash a {
     background-color: #1992D4;
     color: white;
     border: none;
     font-weight: bold;
+    height: 20px;
     padding: 10px 25px 10px 25px;
     border-radius: 20px;
+    text-decoration: none;
+}
+
+#buttondash a:hover {
+    background-color: #75c2eb;
+    ;
 }
 
 #user-corner {
     margin: 10px;
+    display: flex;
 }
 
 #user-corner :nth-child(3) {
