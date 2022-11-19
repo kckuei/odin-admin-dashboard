@@ -34,8 +34,9 @@ nav {
     color: coral;
 }
 
-.nav-grid-header>.nav-grid-title {
+.nav-grid-head>.nav-grid-title {
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 .nav-grid-logo {
