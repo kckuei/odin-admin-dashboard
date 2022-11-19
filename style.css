@@ -310,14 +310,21 @@ main {
 
 .project-icons {
     margin-top: 10px;
-    /* font-weight: 500; */
     display: flex;
     justify-content: flex-end;
+    gap: 10px;
+}
+
+.proj-icon img {
+    height: 20px;
+}
+
+.proj-icon {
+    cursor: pointer;
 }
 
 .announce-card {
     font-size: .8rem;
-    /* font-weight: 400; */
     padding: 15px 5px;
 }
 
@@ -344,10 +351,15 @@ main {
     cursor: pointer;
 }
 
+.trending-icon img {
+    height: 30px;
+}
+
 image {
     padding: 0;
     margin: 0;
 }
+
 
 /* * {
     border: 1px solid red;
