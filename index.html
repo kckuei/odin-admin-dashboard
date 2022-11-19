@@ -12,200 +12,244 @@
 </head>
 
 <body>
-    <!-- Dashboard -->
-    <div id="dashboard">
-        <div id="title">
-            <div></div>
-            <div class="title">Dashboard</div>
-        </div>
-        <div id="home">
-            <div></div>
-            <div class="text">Home</div>
-        </div>
-        <div id="profile">
-            <div></div>
-            <div class="text">Profile</div>
-        </div>
-        <div id="history">
-            <div></div>
-            <div class="text">History</div>
-        </div>
-        <div id="tasks">
-            <div></div>
-            <div class="text">Tasks</div>
-        </div>
-        <div id="communities">
-            <div></div>
-            <div class="text">Communities</div>
-        </div>
-        <div id="settings">
-            <div></div>
-            <div class="text">Settings</div>
-        </div>
-        <div id="support">
-            <div></div>
-            <div class="text">Support</div>
-        </div>
-        <div id="privacy">
-            <div></div>
-            <div class="text">Privacy</div>
-        </div>
-    </div>
+    <!-- Navigation panel -->
+    <nav>
+        <div class="nav-grid">
+            <div class="nav-grid-logo">
+                <div class="title">
+                    <div class="nav-grid-logo">
+                        <span class=""></span>
+                    </div>
+                    <div class="nav-grid-title">
+                        Dashboard
+                    </div>
+                </div>
+            </div>
 
-    <!-- Header -->
-    <div id="header">
-        <div id="search">
-            <div id="search-icon"></div>
-            <input id="search-bar" type="text" placeholder="Search..">
-        </div>
-        <div id="user-corner">
-            <div id="alarm"></div>
-            <div></div>
-            <div>Kevin Kuei</div>
-        </div>
-        <div id="greeting">
-            <div></div>
-            <div id="greeting-text">
-                <div>Hi there,</div>
-                <div>Kevin Kuei (@kckuei)</div>
+            <div class="nav-upper">
+                <div class="nav-grid-logo">
+                    <span class=""></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#home">Home</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span class=""></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#profile">Profile</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span class=""></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#history">History</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span class=""></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#tasks">Tasks</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span class=""></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#communities">Communities</a>
+                </div>
+            </div>
+
+            <div class="nav-lower">
+                <div class="nav-grid-logo">
+                    <span></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#settings">Settings</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#support">Support</a>
+                </div>
+                <div class="nav-grid-logo">
+                    <span></span>
+                </div>
+                <div class="nav-grid-title">
+                    <a href="#privacy">Privacy</a>
+                </div>
             </div>
         </div>
-        <div id="buttondash">
-            <a id="new" href="#new">New</a>
-            <a id="upload" href="#upload">Upload</a>
-            <a id="share" href="#share">Share</a>
+    </nav>
+
+    <!-- Header panel -->
+    <header>
+        <div class="header-grid">
+            <div class="header-grid-search">
+                <span class=""></span>
+                <input class="search-bar" type="text" placeholder="">
+            </div>
+
+            <div class="header-top-right">
+                <span class=""></span>
+                <div></div>
+                <h4>Kevin Kuei</h4>
+            </div>
+
+            <div class="header-greeting">
+                <div>
+                    <span class=""></span>
+                </div>
+                <p class="greeting">Hi there,</p>
+                <p class="greeting-name">Kevin Kuei (@kckuei)</p>
+            </div>
+
+            <div class="header-buttons">
+                <button class="new-btn">
+                    New
+                </button>
+                <button class="upload-btn">
+                    Upload
+                </button>
+                <button class="share-btn">
+                    Share
+                </button>
+            </div>
         </div>
-    </div>
+    </header>
 
     <!-- Main Panel -->
-    <div id="main">
-
-        <!-- Projects -->
-        <div id="projects">
-            <div class="title">Your Projects</div>
-            <div id="proj-card-container">
-                <div class="proj-card">
-                    <div>Super Cool Project</div>
-                    <div>Lorem Ipsum dolor sit amet consectetur adipiscing eit. Maxime mollitia, molestiae quas vel sint
-                        commodi.</div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+    <main>
+        <div class="main-grid">
+            <div id="main-grid-projects">
+                <div class="main-projects-title">
+                    Your Projects
+                </div>
+                <div class="main-projects-card">
+                    <h4>Super Cool Project</h4>
+                    <p>Lorem Ipsum dolor sit amet consectetur adipiscing eit. Maxime mollitia, molestiae quas vel sint
+                        commodi.</p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
                     </div>
                 </div>
-                <div class="proj-card">
-                    <div>Less Cool Project</div>
-                    <div>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas vel
-                        sint commodi. Maxime mollitia, molestiae quas vel sint commodi.</div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="main-projects-card">
+                    <h4>Less Cool Project</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas vel
+                        sint commodi. Maxime mollitia, molestiae quas vel sint commodi.</p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
                     </div>
                 </div>
-                <div class="proj-card">
-                    <div>Easy Peasy App</div>
-                    <div>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsam aliquam.
-                        Curabitur dignissim nisi in tortor commodo, ac bibendum magna.</div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="main-projects-card">
+                    <h4>Easy Peasy App</h4>
+                    <p>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsam aliquam.
+                        Curabitur dignissim nisi in tortor commodo, ac bibendum magna.</p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
                     </div>
                 </div>
-                <div class="proj-card">
-                    <div>Impossible App</div>
-                    <div>In hac habitasse platea dictumst. Vivamus dictum nutrum acru, aplacerat velit sagittis id.
-                    </div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
-                    </div>
-                </div>
-                <div class="proj-card">
-                    <div>Ad Blocker</div>
-                    <div>Quisque eget nutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra henderit felis.
-                        Aliquam sed malesuada eros.</div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="main-projects-card">
+                    <h4>Impossible App</h4>
+                    <p>In hac habitasse platea dictumst. Vivamus dictum nutrum acru, aplacerat velit sagittis id.
+                    </p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
                     </div>
                 </div>
-                <div class="proj-card">
-                    <div>Money Maker</div>
-                    <div>Praesent convallis, libero quis congue elementum nunc ante faucibus sapien, ac scelerisque
-                        tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</div>
-                    <div>
-                        <div></div>
-                        <div></div>
-                        <div></div>
+                <div class="main-projects-card">
+                    <h4>Ad Blocker</h4>
+                    <p>Quisque eget nutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra henderit felis.
+                        Aliquam sed malesuada eros.</p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
+                    </div>
+                </div>
+                <div class="main-projects-card">
+                    <h4>Money Maker</h4>
+                    <p>Praesent convallis, libero quis congue elementum nunc ante faucibus sapien, ac scelerisque
+                        tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</p>
+                    <div class="project-icons">
+                        <span class=""></span>
+                        <span class=""></span>
+                        <span class=""></span>
                     </div>
                 </div>
             </div>
-        </div>
-        <div id="annouce-trend">
 
-            <!-- Announcements -->
-            <div id="annoucements">
-                <div class="title">Announcements</div>
-                <div id="announce-container">
-                    <div class="announce-card">
+            <div class="main-grid-side">
+                <div class="announce-title">
+                    <h4>Announcements</h4>
+                </div>
+                <div class="announce-container">
+                    <div class="announce-card bottom-border">
                         <div>Site Maintenence</div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae
+                            quas
                             vel sint commodi...</div>
                     </div>
-                    <div class="announce-card outline-top">
+
+                    <div class="announce-card bottom-border">
                         <div>Community Share Day</div>
                         <div>Lorem ipsum dolro sit amet consectetur adipiscing elit. Maxime mollitia...</div>
                     </div>
-                    <div class="announce-card outline-top">
+
+                    <div class="announce-card">
                         <div>Updated Privacy Policy</div>
-                        <div>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas vel
+                        <div>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas
+                            vel
                             sing commodi.</div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Trending -->
-            <div id="trending">
-                <div class="title">Trending</div>
-                <div id="trend-container">
-                    <div class="trend-card">
-                        <div></div>
+                <div class="trending-title">
+                    <h4>Trending</h4>
+                </div>
+
+                <div class="trending-container">
+                    <div class="trending-card">
+                        <span></span>
                         <div>
-                            <div>@tegan</div>
-                            <div>World Peace Builders</div>
+                            <p class="username">@tegan</p>
+                            <p class="appname">World Peace Builders</p>
                         </div>
                     </div>
-                    <div class="trend-card">
-                        <div></div>
+                    <div class="trending-card">
+                        <span></span>
                         <div>
-                            <div>@morgan</div>
-                            <div>Best App Ever</div>
+                            <p class="username">@morgan</p>
+                            <p class="appname">Best App Ever</p>
                         </div>
                     </div>
-                    <div class="trend-card">
-                        <div></div>
+                    <div class="trending-card">
+                        <span></span>
                         <div>
-                            <div>@kendall</div>
-                            <div>Life Changing App</div>
+                            <p class="username">@kendall</p>
+                            <p class="appname">Life Changing App</p>
                         </div>
                     </div>
-                    <div class="trend-card">
-                        <div></div>
+                    <div class="trending-card">
+                        <span></span>
                         <div>
-                            <div>@alex</div>
-                            <div>No Traffic Maker</div>
+                            <p class="username">@alex</p>
+                            <p class="appname">No Traffic Maker</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
-
+    </main>
 
 </body>
 
