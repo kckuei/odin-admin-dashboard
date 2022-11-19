@@ -7,25 +7,15 @@ body {
 
 body {
     display: grid;
-    grid-template: 1fr 6fr / 1fr 4fr;
-    height: max(1200px, 100vh)
+    grid-template: 1fr 8fr / 1fr 4fr;
+    height: max(800px, 100vh)
 }
 
+/* Dashboard */
 #dashboard {
     background-color: #1992D4;
     color: white;
     grid-row: 1 / 3;
-}
-
-#header {
-    background-color: white;
-    grid-row: 1 / 2;
-    grid-column: 2 / 4;
-}
-
-#main {
-    background-color: #E2E8F0;
-    grid-area: 2 / 2 / 4 / 4;
 }
 
 #dashboard {
@@ -48,96 +38,23 @@ body {
     color: coral;
 }
 
+#dashboard>div {
+    margin-left: 10px;
+}
+
 
 #title,
 #communities {
     margin-bottom: 50px;
 }
 
-#main {
-    display: grid;
-    grid-template: 1fr 1fr / 3fr 1fr;
-}
-
-#projects {
-    grid-area: 1 / 1 / 3 / 2;
-}
-
-#proj-card-container {
-    display: inline-flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    gap: 5%;
-}
-
-.proj-card {
-    width: 40%;
-    height: 120px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
+/* Header */
+#header {
     background-color: white;
-    border-left: 8px solid #F0B429;
-    box-shadow: 2.5px 2.5px lightgray;
-    flex-grow: 1;
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
 }
 
-.proj-card:hover {
-    box-shadow: 5px 5px lightblue;
-}
-
-.proj-card :first-child {
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-.proj-card :nth-child(2) {
-    font-size: 1em;
-    color: #686868;
-}
-
-#main .title {
-    font-weight: bold;
-    font-size: 1.3em;
-    padding: 10px;
-}
-
-#announce-container,
-#trend-container {
-    height: 80%;
-    margin: 10px 20px 10px 10px;
-    border-radius: 5px;
-    background-color: white;
-    box-shadow: 2.5px 2.5px lightgray;
-}
-
-.announce-card {
-    padding: 20px;
-}
-
-.announce-card :first-child {
-    font-weight: bold;
-    font-size: 0.9em;
-}
-
-.announce-card :nth-child(2) {
-    font-size: 0.8em;
-    color: #686868;
-}
-
-.trend-card {
-    padding: 20px;
-}
-
-.trend-card :first-child {
-    font-size: 0.9em;
-}
-
-
-.trend-card :nth-child(2) :nth-child(2) {
-    font-size: 0.8em;
-    color: #686868;
-}
 
 #header {
     display: grid;
@@ -205,6 +122,127 @@ body {
     font-size: 1em;
     font-weight: bold;
 }
+
+
+/* Main */
+#main {
+    background-color: #E2E8F0;
+    grid-area: 2 / 2 / 4 / 4;
+}
+
+#main {
+    display: grid;
+    grid-template: 1fr 1fr / 2.2fr 1fr;
+}
+
+
+#main .title {
+    font-weight: bold;
+    font-size: 1.1em;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+
+/* Projects area */
+#projects {
+    grid-area: 1 / 1 / 4 / 2;
+}
+
+#annoucements {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+#trending {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+#proj-card-container {
+    overflow: auto;
+    display: grid;
+    gap: 5px;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.proj-card {
+    height: 160px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    border-left: 8px solid #F0B429;
+    box-shadow: 2.5px 2.5px lightgray;
+}
+
+.proj-card:hover {
+    box-shadow: 5px 5px lightblue;
+}
+
+.proj-card :first-child {
+    font-weight: bold;
+    font-size: 1.0em;
+}
+
+.proj-card :nth-child(2) {
+    font-size: 0.9em;
+    color: #686868;
+}
+
+/* Announcements area */
+#announce-container,
+#trend-container {
+    margin: 10px 20px 10px 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2.5px 2.5px lightgray;
+}
+
+.announce-card {
+    padding: 20px;
+}
+
+.announce-card :first-child {
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.announce-card :nth-child(2) {
+    font-size: 0.8em;
+    color: #686868;
+}
+
+#announce-container {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.outline-top {
+    border-top: 1px solid lightgrey;
+    left: 20%;
+    right: 80%;
+}
+
+/* Trending area */
+.trend-card {
+    padding: 20px;
+}
+
+.trend-card :first-child {
+    font-size: 0.9em;
+}
+
+.trend-card :nth-child(2) :nth-child(2) {
+    font-size: 0.8em;
+    color: #686868;
+}
+
 
 /* * {
     border: 1px solid red;

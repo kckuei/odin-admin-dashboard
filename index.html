@@ -6,32 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-    <!-- Notes
-    * Body will use grid layout to arrange dashoard, header bar, and main projects area
-    
-    * Dashboard will use flex layout column, children will use flex layout row. Use trailing padding/margin to add space between
-    the title, primary, and secondary groupings of buttons. 
-    
-    * Main project area will also use a grid layout.
-        * The children will be containers for Projects, Announcements, and Trending
-        * The children will use flex layout column in general, except for Project cards, which will use flex wrapping
-    
-    * The headerbar should use a grid layout. 
-        * Children will be 4 containers. 
-            * Searchb 
-            * Greeting
-            * User corner
-            * Button area
-
-    * The project cards should grow/shrink appropriately. Maybe set a minimum and maximum size. 
-    * Need to address issue, where body max height becomes shorter than the card stack height (height: 100%)
-    -->
-
+    <!-- Dashboard -->
     <div id="dashboard">
         <div id="title">
             <div></div>
@@ -71,6 +52,7 @@
         </div>
     </div>
 
+    <!-- Header -->
     <div id="header">
         <div id="search">
             <div id="search-icon"></div>
@@ -95,13 +77,17 @@
         </div>
     </div>
 
+    <!-- Main Panel -->
     <div id="main">
+
+        <!-- Projects -->
         <div id="projects">
             <div class="title">Your Projects</div>
             <div id="proj-card-container">
                 <div class="proj-card">
-                    <div>TOP Project 1</div>
-                    <div>Project description.</div>
+                    <div>Super Cool Project</div>
+                    <div>Lorem Ipsum dolor sit amet consectetur adipiscing eit. Maxime mollitia, molestiae quas vel sint
+                        commodi.</div>
                     <div>
                         <div></div>
                         <div></div>
@@ -109,8 +95,9 @@
                     </div>
                 </div>
                 <div class="proj-card">
-                    <div>TOP Project 2</div>
-                    <div>Project description.</div>
+                    <div>Less Cool Project</div>
+                    <div>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas vel
+                        sint commodi. Maxime mollitia, molestiae quas vel sint commodi.</div>
                     <div>
                         <div></div>
                         <div></div>
@@ -118,8 +105,9 @@
                     </div>
                 </div>
                 <div class="proj-card">
-                    <div>TOP Project 3</div>
-                    <div>Project description.</div>
+                    <div>Easy Peasy App</div>
+                    <div>Etiam cursus eros ac efficitur fringilla. Vestibulum dignissim urna eget accumsam aliquam.
+                        Curabitur dignissim nisi in tortor commodo, ac bibendum magna.</div>
                     <div>
                         <div></div>
                         <div></div>
@@ -127,8 +115,9 @@
                     </div>
                 </div>
                 <div class="proj-card">
-                    <div>TOP Project 4</div>
-                    <div>Project description.</div>
+                    <div>Impossible App</div>
+                    <div>In hac habitasse platea dictumst. Vivamus dictum nutrum acru, aplacerat velit sagittis id.
+                    </div>
                     <div>
                         <div></div>
                         <div></div>
@@ -136,8 +125,9 @@
                     </div>
                 </div>
                 <div class="proj-card">
-                    <div>TOP Project 5</div>
-                    <div>Project description.</div>
+                    <div>Ad Blocker</div>
+                    <div>Quisque eget nutrum nisl. Nam augue justo, cursus vitae metus vel, pharetra henderit felis.
+                        Aliquam sed malesuada eros.</div>
                     <div>
                         <div></div>
                         <div></div>
@@ -145,8 +135,9 @@
                     </div>
                 </div>
                 <div class="proj-card">
-                    <div>TOP Project 6</div>
-                    <div>Project description.</div>
+                    <div>Money Maker</div>
+                    <div>Praesent convallis, libero quis congue elementum nunc ante faucibus sapien, ac scelerisque
+                        tortor purus sit amet ex. Pellentesque mollis nec sem vel aliquam.</div>
                     <div>
                         <div></div>
                         <div></div>
@@ -155,52 +146,60 @@
                 </div>
             </div>
         </div>
-        <div id="annoucements">
-            <div class="title">Announcements</div>
-            <div id="announce-container">
-                <div class="announce-card">
-                    <div>Site Maintenence</div>
-                    <div>Text description.</div>
-                </div>
-                <div class="announce-card">
-                    <div>Community Share Day</div>
-                    <div>Text description.</div>
-                </div>
-                <div class="announce-card">
-                    <div>Updated Privacy Policy</div>
-                    <div>Text description.</div>
+        <div id="annouce-trend">
+
+            <!-- Announcements -->
+            <div id="annoucements">
+                <div class="title">Announcements</div>
+                <div id="announce-container">
+                    <div class="announce-card">
+                        <div>Site Maintenence</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia, molestiae quas
+                            vel sint commodi...</div>
+                    </div>
+                    <div class="announce-card outline-top">
+                        <div>Community Share Day</div>
+                        <div>Lorem ipsum dolro sit amet consectetur adipiscing elit. Maxime mollitia...</div>
+                    </div>
+                    <div class="announce-card outline-top">
+                        <div>Updated Privacy Policy</div>
+                        <div>Lorem ipsum dolor sit amet consectetur adipiscing elit. Maxime mollitia, molestiae quas vel
+                            sing commodi.</div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div id="trending">
-            <div class="title">Trending</div>
-            <div id="trend-container">
-                <div class="trend-card">
-                    <div></div>
-                    <div>
-                        <div>@tegan</div>
-                        <div>Wealth Equalization App</div>
+
+            <!-- Trending -->
+            <div id="trending">
+                <div class="title">Trending</div>
+                <div id="trend-container">
+                    <div class="trend-card">
+                        <div></div>
+                        <div>
+                            <div>@tegan</div>
+                            <div>World Peace Builders</div>
+                        </div>
                     </div>
-                </div>
-                <div class="trend-card">
-                    <div></div>
-                    <div>
-                        <div>@morgan</div>
-                        <div>Eliminate all Dickheads App</div>
+                    <div class="trend-card">
+                        <div></div>
+                        <div>
+                            <div>@morgan</div>
+                            <div>Best App Ever</div>
+                        </div>
                     </div>
-                </div>
-                <div class="trend-card">
-                    <div></div>
-                    <div>
-                        <div>@kendall</div>
-                        <div>Life Changing App</div>
+                    <div class="trend-card">
+                        <div></div>
+                        <div>
+                            <div>@kendall</div>
+                            <div>Life Changing App</div>
+                        </div>
                     </div>
-                </div>
-                <div class="trend-card">
-                    <div></div>
-                    <div>
-                        <div>@alex</div>
-                        <div>No Traffic Maker</div>
+                    <div class="trend-card">
+                        <div></div>
+                        <div>
+                            <div>@alex</div>
+                            <div>No Traffic Maker</div>
+                        </div>
                     </div>
                 </div>
             </div>
